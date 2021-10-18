@@ -1,10 +1,16 @@
 import React from 'react';
-import Inicio from './pages/client/painel';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './styles/GlobalStyles';
+import Routes from './routes';
+import dark from './styles/themes/dark';
 
 function App() {
   return (
     <div className="App">
-      <Inicio />
+      <ThemeProvider theme={dark}>
+        <GlobalStyles />
+        <Routes />
+      </ThemeProvider>
     </div>
   );
 }
