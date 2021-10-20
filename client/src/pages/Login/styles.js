@@ -1,4 +1,20 @@
 import styled, { keyframes } from 'styled-components';
+import TextField from '@material-ui/core/TextField';
+
+export default styled(TextField)`
+  color: white;
+  background-color: white;
+  height: 80px;
+`;
+
+export const CardWrsapper = styled.div`
+  display: flex;
+  background-color: transparent;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const CardWrapper = styled.div`
   display: flex;

@@ -1,10 +1,14 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import { Container, Title, Stars, Stars2, Stars3, CardWrapper, Card, Teste } from './styles';
 
-import { Container, Title, Stars, Stars2, Stars3, CardWrapper, Card } from './styles';
+
+
 
 function Login() {
+
   const handleChange = () => {
     console.log('mudou');
   }
@@ -46,7 +50,7 @@ function Login() {
             color="secondary"
           />
           <br />
-          <Button variant="outlined" color="primary" onClick={handleClick}>ENVIAR</Button>
+          <Button variant="outlined" color="secondary" onClick={handleClick}>ENVIAR</Button>
           <br />
         </Card>
       </CardWrapper>
