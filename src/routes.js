@@ -6,10 +6,16 @@ const Usuario = require('./controllers/usuarios.controller');
 const WebScrapper = require('./controllers/webscrapper.controller');
 
 //USUÁRIOS
-routes.post('/api/usuarios', Usuario.create);
+routes.post('/usuarios', Usuario.create);
+//routes.post('/api/usuarios', Usuario.create);
 routes.get('/api/usuarios', Usuario.all);
 
 //Scrapper
 routes.post('/scrapper', WebScrapper.index);
+
+//AUTENTICACAO
+routes.post('/autenticacao', async (request, response) => {
+  const { email, senha } = request.body;
+});
 
 module.exports = routes;

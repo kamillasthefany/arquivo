@@ -1,5 +1,7 @@
 const { Sequelize } = require("sequelize");
 
+const Usuario = require('../models/Usuario');
+
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
   define: {
     timestamps: true,
@@ -11,6 +13,8 @@ const sequelize = new Sequelize(process.env.DATABASE_URL, {
     },
   },
 });
+
+Usuario.init(sequelize);
 
 sequelize
   .authenticate()

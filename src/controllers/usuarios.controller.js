@@ -1,4 +1,4 @@
-const Usuario = require('../database/models/usuario');
+const Usuario = require('../models/Usuario');
 
 const Usuarios = {
     all(req, res, next) {
@@ -8,16 +8,20 @@ const Usuarios = {
             .catch(next);
     },
 
-    create(req, res, next) {
-        const { nome } = req.body;
+    async create(request, response, next) {
 
-        Usuario.create({
-            nome,
-        })
-            .then((result) => {
-                res.status(201).json(result); //return with ID -> 201 (CREATED)
-            })
-            .catch(next);
+        try {
+            const { nome } = request.body;
+
+            const usuario = await Usuario.create(nome);
+            console.log('resposta', usuario);
+            return response.status(201).json(usuario);
+        }
+        catch (error) {
+            console.log('error', error);
+            return response.status(500).json(error);
+        }
+
     },
 };
 
