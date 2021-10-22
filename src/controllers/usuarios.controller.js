@@ -13,7 +13,7 @@ const Usuarios = {
         try {
             const { nome } = request.body;
             console.log('nome', nome);
-            const usuario = await Usuario.create(nome);
+            const usuario = await Usuario.create({ nome });
             console.log('resposta', usuario);
             return response.status(201).json(usuario);
         }
