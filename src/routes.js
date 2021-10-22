@@ -7,8 +7,7 @@ const WebScrapper = require('./controllers/webscrapper.controller');
 
 //USUÁRIOS
 routes.post('/usuarios', Usuario.create);
-//routes.post('/api/usuarios', Usuario.create);
-routes.get('/api/usuarios', Usuario.all);
+routes.get('/usuarios', Usuario.all);
 
 //Scrapper
 routes.post('/scrapper', WebScrapper.index);
