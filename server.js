@@ -1,4 +1,6 @@
 require("dotenv").config();
+require("./src/database/sequelize");
+
 const express = require('express');
 const routes = require('./src/routes');
 const PORT = process.env.PORT || 5000;

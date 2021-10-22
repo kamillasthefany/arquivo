@@ -12,7 +12,6 @@ class Usuario extends Model {
 
     return this;
   }
-
 }
 
 module.exports = Usuario;
