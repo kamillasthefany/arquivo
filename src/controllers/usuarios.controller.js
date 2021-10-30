@@ -1,4 +1,5 @@
 const Usuario = require('../models/Usuario');
+const bcrypt = require('bcrypt');
 
 const Usuarios = {
     all(req, res, next) {
@@ -11,10 +12,9 @@ const Usuarios = {
     async create(request, response, next) {
 
         try {
-            const { nome } = request.body;
-            console.log('nome', nome);
-            const usuario = await Usuario.create({ nome });
-            console.log('resposta', usuario);
+            const { nome, email, senha } = request.body;
+            const senhaBcrypt = await bcrypt.hash(senha, 10);
+            const usuario = await Usuario.create({ nome, email, senha: senhaBcrypt });
             return response.status(201).json(usuario);
         }
         catch (error) {

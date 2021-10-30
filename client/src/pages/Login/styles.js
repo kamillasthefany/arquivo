@@ -1,6 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 
+// export const InputCustom = styled.TextField.attrs({
+//   color: 'white',
+//   backgroundColor: 'white',
+// })``;
+
 export default styled(TextField)`
   color: white;
   background-color: white;

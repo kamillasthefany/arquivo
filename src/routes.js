@@ -3,6 +3,8 @@ const express = require('express');
 const routes = express.Router();
 
 const Usuario = require('./controllers/usuarios.controller');
+const Autenticacao = require('./controllers/autenticacao.controller');
+const Arquivo = require('./controllers/arquivos.controller');
 const WebScrapper = require('./controllers/webscrapper.controller');
 
 //USUÁRIOS
@@ -13,8 +15,10 @@ routes.get('/usuarios', Usuario.all);
 routes.post('/scrapper', WebScrapper.index);
 
 //AUTENTICACAO
-routes.post('/autenticacao', async (request, response) => {
-  const { email, senha } = request.body;
-});
+routes.post('/autenticacao', Autenticacao.index);
+
+//ARQUIVOS
+routes.get('/arquivos', Arquivo.index);
+routes.post('/arquivos', Arquivo.create);
 
 module.exports = routes;

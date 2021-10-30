@@ -1,25 +1,23 @@
 'use strict';
 
-const { sequelize } = require("../../models/Usuario");
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('usuarios', {
+    await queryInterface.createTable('arquivos', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false,
       },
-      nome: {
+      tweet: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      email: {
+      hashtags: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
       },
-      senha: {
+      link_da_noticia: {
         type: Sequelize.STRING,
         allowNull: true,
       },
@@ -35,6 +33,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('usuarios');
+    await queryInterface.dropTable('arquivos');
   }
 };
