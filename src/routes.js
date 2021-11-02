@@ -1,4 +1,5 @@
 const express = require('express');
+//const app = require('expre')
 
 const routes = express.Router();
 
@@ -7,9 +8,23 @@ const Autenticacao = require('./controllers/autenticacao.controller');
 const Arquivo = require('./controllers/arquivos.controller');
 const WebScrapper = require('./controllers/webscrapper.controller');
 
+const authMiddleware = require('./middlewares/auth');
+
+
+// express.group("/api/", (router) => {
+//   router.get("/login", loginController.store); // /api/v1/login 
+// });
+
+// routes.group(() => {
+//   routes.get('/usuarios', Usuario.all);
+
+// }).middleware([authMiddleware]);
+
+
 //USUÁRIOS
-routes.post('/usuarios', Usuario.create);
 routes.get('/usuarios', Usuario.all);
+routes.post('/usuarios', Usuario.create);
+
 
 //Scrapper
 routes.post('/scrapper', WebScrapper.index);
@@ -18,7 +33,7 @@ routes.post('/scrapper', WebScrapper.index);
 routes.post('/autenticacao', Autenticacao.index);
 
 //ARQUIVOS
-routes.get('/arquivos', Arquivo.index);
-routes.post('/arquivos', Arquivo.create);
+routes.get('/arquivos', authMiddleware, Arquivo.index);
+routes.post('/arquivos', authMiddleware, Arquivo.create);
 
 module.exports = routes;
