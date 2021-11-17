@@ -5,9 +5,10 @@ export const useListarTweets = () => {
   const { isLoading, data, isError } = useQuery("tweets", () =>
     listarTweets()
   );
+  console.log('front service', data?.data);
   return {
     isLoading: isLoading,
-    data: data?.data?.results,
+    data: data?.data,
     error: isError
   };
 };

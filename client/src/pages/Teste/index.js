@@ -20,19 +20,16 @@ const Home = () => {
       <div>
         {tweets.isLoading && (<p>carregando</p>)}
         {
+          // tweets.data && (JSON.stringify(tweets.data))
+        }
+        {
           tweets.data && (
-            console.log('data', tweets),
-            tweets.data.map(item => (<p> {{ item }}</p>))
-            //tweets.data.map(item => (<Card title={item.name} subtitle={item.species} image={item.image} />))
+            tweets.data.map(item => (
+              <Card titulo={item.name} texto={item.text} hashtags="hashtags" />
+            ))
           )
         }
-        {/* <Card titulo="titulo" texto="Texto aleatório" hashtags="hashtags" /> */}
       </div>
-      {/* <div>
-        <Card titulo="titulo" texto="Texto aleatório" hashtags="hashtags" />
-      </div> */}
-
-
     </Container>
   )
 }
