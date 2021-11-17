@@ -7,6 +7,7 @@ const Usuario = require('./controllers/usuarios.controller');
 const Autenticacao = require('./controllers/autenticacao.controller');
 const Arquivo = require('./controllers/arquivos.controller');
 const WebScrapper = require('./controllers/webscrapper.controller');
+const Tweet = require('./controllers/tweet.controller');
 
 const authMiddleware = require('./middlewares/auth');
 
@@ -35,5 +36,8 @@ routes.post('/autenticacao', Autenticacao.index);
 //ARQUIVOS
 routes.get('/arquivos', authMiddleware, Arquivo.index);
 routes.post('/arquivos', authMiddleware, Arquivo.create);
+
+//TWEET
+routes.get('/tweet', Tweet.index);
 
 module.exports = routes;
