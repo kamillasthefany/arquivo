@@ -8,9 +8,6 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  //teste
-  //margin: 40px 0;
-
 `;
 
 export const CardBox = styled.div`

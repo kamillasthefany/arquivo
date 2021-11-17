@@ -1,37 +1,32 @@
 import React from 'react';
-import { Container, ContainerGrid } from './styles';
+import { Container, Box, MenuWrapper, ContentWrapper } from './styles';
 import { Card } from '../../components/Card';
+import { Header } from '../../components/Header';
 import { useListarTweets } from '../../queries/tweets/index';
 
 const Home = () => {
 
   const tweets = useListarTweets();
 
-  const exemplos = [
-    { 'titulo': 'teste', 'texto': 'outro texto', 'hashtags': '#outraCoisa' },
-    { 'titulo': 'novo teste', 'texto': 'texto aleatorio', 'hashtags': '#outratag' },
-  ];
-
   return (
     <Container>
-      <div>
-        <p>texto qualquer</p>
-      </div>
-      <div>
-        {tweets.isLoading && (<p>carregando</p>)}
-        {
-          // tweets.data && (JSON.stringify(tweets.data))
-        }
-        {
-          tweets.data && (
-            tweets.data.map(item => (
-              <Card titulo={item.name} texto={item.text} hashtags="hashtags" />
-            ))
-          )
-        }
-      </div>
+      <Header />
+      <Box>
+        <MenuWrapper>
+          <p>menu</p>
+        </MenuWrapper>
+        <ContentWrapper>
+          {
+            tweets.data && (
+              tweets.data.map(item => (
+                <Card key={item.name} titulo={item.name} texto={item.text} hashtags="hashtags" />
+              ))
+            )
+          }
+        </ContentWrapper>
+      </Box>
     </Container>
-  )
+  );
 }
 
 export default Home;

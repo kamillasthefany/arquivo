@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Container>
       {exemplos.map(item => (
-        <Card titulo={item.titulo} texto={item.texto} hashtags={item.hashtags} />
+        <Card key={item.titulo} titulo={item.titulo} texto={item.texto} hashtags={item.hashtags} />
       ))}
     </Container>
   )
