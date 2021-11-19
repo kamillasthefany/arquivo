@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  z-index: 1;
+  //z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +14,15 @@ export const CardBox = styled.div`
   position: relative;
   //width: 600px;
   width: 95%;
-  height: 200px;
+  height: 150px;
   color: black;
   background-color: #A6A6A6;
   //background: rgba(255, 255, 255, 0.05);
-  margin: 10px;
+  margin: 5px;
  // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-evenly;
   align-items: center;
   backdrop-filter: blur(10px);
   flex-direction: column;
@@ -31,20 +31,20 @@ export const CardBox = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  max-height: 100px;
-  padding: 1rem;
+  max-height: 50px;
+  padding: 0.5rem;
   //color: black;
 `;
 export const Text = styled.div`
-    max-height: 100px;
+    max-height: 50px;
     display: flex;
-    padding: 1rem;
+  padding: 0.5rem;
 `;
 
 export const Tags = styled.div`
-  max-height: 100px;
+  max-height: 50px;
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
 `;
 
 export const CardWrapper = styled.div`

@@ -5,7 +5,8 @@ const BASE_URL = 'http://alurakut.vercel.app/';
 export const MenuWrapper = styled.header`
   width: 100%;
   background-color: #404040;
-  background-color: #404040;
+  //background-color: #404040;
+  border-top-color: #404040;
 
   .alurakutMenuProfileSidebar {
     background: white;

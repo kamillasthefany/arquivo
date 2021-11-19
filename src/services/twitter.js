@@ -25,7 +25,7 @@ module.exports = {
 function getTweets() {
   return new Promise((resolve, reject) => {
     let params = {
-      q: 'banana since:2011-07-11',
+      q: 'adele since:2011-07-11',
       count: 2,
     };
 

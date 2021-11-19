@@ -5,6 +5,7 @@ import MenuOpen from '../../../assets/icons/menu-open.svg';
 import MenuClosed from '../../../assets/icons/menu-closed.svg';
 import { ProfileSidebarMenu } from '../ProfileSidebarMenu';
 import { Link } from 'react-router-dom';
+import userFoto from '../../../assets/user.png';
 
 export function Menu({ githubUser }) {
   const [isMenuOpen, setMenuState] = useState(false);
@@ -49,7 +50,8 @@ function ProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
-        <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
+        <img src={userFoto} style={{ borderRadius: '5px' }} />
+        {/* <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} /> */}
         <hr />
         <p>
           <a className="boxLink" href={`/user/${githubUser}`}>

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #FFF;
+  //background: #FFF;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(5px);
   border-radius: 8px;
   padding: 16px;
   grid-area: 'profileArea';
@@ -44,6 +46,7 @@ export const Container = styled.div`
   input {
     width: 100%;
     background-color: #F4F4F4;
+    //background-color: #A6A6A6;
     color: #333333;
     border: 0;
     padding: 14px 16px;
@@ -55,13 +58,15 @@ export const Container = styled.div`
     }
   }
   textarea {
-    border: 1px solid #CDD5E5;
+    //border: 1px solid #CDD5E5;
+    border: 1px solid #A6A6A6;
     box-sizing: border-box;
     border-radius: 4px;
     min-height:190px;
     width: 100%;
     height: 100%;
     padding: 16px;
+    background-color: #A6A6A6;
 
     /* width: 100%;
     height: 50%;

@@ -15,6 +15,7 @@ export default function Home() {
 
   const tweets = useListarTweets();
   const githubUser = 'kamillasthefany';
+  const trackers = ['tstes', 'tes2', 'teste3'];
 
   return (
     <Container>
@@ -28,7 +29,7 @@ export default function Home() {
             {
               tweets.data && (
                 tweets.data.map(item => (
-                  <Card key={item.name} titulo={item.name} texto={item.text} hashtags="hashtags" />
+                  <Card key={item.name} titulo={item.user.name} texto={item.text} hashtags="hashtags" />
                 ))
               )
             }
@@ -36,7 +37,7 @@ export default function Home() {
         </ContainerGrid>
         <RelationsGrid>
           <CadastroWrapper />
-          {/* <RelationsBoxWrapper pessoasFavoritas={comunidades} /> */}
+          <RelationsBoxWrapper pessoasFavoritas={trackers} />
           {/* <RelationsBoxWrapper pessoasFavoritas={pessoasFavoritas} /> */}
         </RelationsGrid>
       </MainGrid>
