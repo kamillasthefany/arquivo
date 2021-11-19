@@ -4,7 +4,7 @@ import { Card } from '../../components/Card';
 import { Header } from '../../components/Header';
 import { useListarTweets } from '../../queries/tweets/index';
 
-const Home = () => {
+const Teste = () => {
 
   const tweets = useListarTweets();
 
@@ -29,4 +29,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Teste;

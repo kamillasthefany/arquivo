@@ -6,6 +6,10 @@ export default {
     secondary: '#252A48',
     tertiary: '#313862',
 
+    lightSilver: '#D9D9D9',
+    silver: '#A6A6A6',
+    darkSilver: '#404040',
+
     white: '#FFF',
     black: '#000',
     gray: '#BFBFBF',

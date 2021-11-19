@@ -6,6 +6,7 @@ const routes = express.Router();
 const Usuario = require('./controllers/usuarios.controller');
 const Autenticacao = require('./controllers/autenticacao.controller');
 const Arquivo = require('./controllers/arquivos.controller');
+const Comentario = require('./controllers/comentarios.controller');
 const WebScrapper = require('./controllers/webscrapper.controller');
 const Tweet = require('./controllers/tweet.controller');
 
@@ -39,5 +40,9 @@ routes.post('/arquivos', authMiddleware, Arquivo.create);
 
 //TWEET
 routes.get('/tweet', Tweet.index);
+
+//COMENTARIO
+routes.get('/comentario', Comentario.index);
+routes.post('/comentario', Comentario.create);
 
 module.exports = routes;

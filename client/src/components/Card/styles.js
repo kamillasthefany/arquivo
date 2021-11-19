@@ -12,11 +12,14 @@ export const Container = styled.div`
 
 export const CardBox = styled.div`
   position: relative;
-  width: 600px;
+  //width: 600px;
+  width: 95%;
   height: 200px;
-  background: rgba(255, 255, 255, 0.05);
+  color: black;
+  background-color: #A6A6A6;
+  //background: rgba(255, 255, 255, 0.05);
   margin: 10px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+ // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -30,6 +33,7 @@ export const Title = styled.div`
   display: flex;
   max-height: 100px;
   padding: 1rem;
+  //color: black;
 `;
 export const Text = styled.div`
     max-height: 100px;
