@@ -16,8 +16,6 @@ const Comentarios = {
 
     try {
       const { comentario } = request.body;
-      const newComent = { comentario: comentario };
-      console.log('comentario', newComent);
       const result = await Comentario.create({ comentario, usuario_id: 1 });
       return response.status(201).json(result);
     }
