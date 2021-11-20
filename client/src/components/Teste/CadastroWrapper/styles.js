@@ -59,15 +59,16 @@ export const Container = styled.div`
   }
   textarea {
     //border: 1px solid #CDD5E5;
-    border: 1px solid #A6A6A6;
+    //border: 1px solid #A6A6A6;
+    //list-styleborder: 1px solid #404040;
     box-sizing: border-box;
     border-radius: 4px;
     min-height:190px;
     width: 100%;
     height: 100%;
     padding: 16px;
-    background-color: #A6A6A6;
-
+    //background-color: #A6A6A6;
+    background: rgba(14, 13, 13, 0.404);
     /* width: 100%;
     height: 50%;
     //background-color: #F4F4F4;
@@ -80,8 +81,9 @@ export const Container = styled.div`
     border-radius: 0.5rem; */
     //border-radius: 10000px;
     ::placeholder {
-      color: #333333;
-      opacity: 1;
+      color: #D9D9D9;
+      //color: #333333;
+     // opacity: 1;
     }
   }
   button {
@@ -89,7 +91,8 @@ export const Container = styled.div`
     padding: 8px 12px;
     color: #FFFFFF;
     border-radius: 10000px;
-    background-color: #6F92BB;
+    background-color: #737373;
+    //background-color: #6F92BB;
   }
     ul {
     display: grid;

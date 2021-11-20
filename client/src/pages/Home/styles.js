@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-image:url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-38.jpg);
+  //background-image:url(https://wallpapercave.com/wp/wp4676582.jpg);
   color:#FFF;
   height: 100vh;
   width:100vw;

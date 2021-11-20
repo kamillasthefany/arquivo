@@ -1,13 +1,19 @@
 import React from 'react';
-import { Container, CardBox, Title, Text, Tags, CardContent } from './styles';
+import { Container, CardBox, Title, Text, Tags, ContentWrapper, CardContent, TweetWrapper } from './styles';
 
 export const Card = ({ titulo, texto, hashtags }) => {
   return (
     <Container id="card">
       <CardBox id="cardbox">
-        <Title> {titulo}</Title>
-        <Text> {texto} </Text>
-        <Tags> {hashtags}</Tags>
+        <TweetWrapper>
+          <Title> {titulo}</Title>
+          <Text> {texto} </Text>
+          <Tags> {hashtags}</Tags>
+        </TweetWrapper>
+        <ContentWrapper>
+          <Text> {texto} </Text>
+        </ContentWrapper>
+
       </CardBox>
     </Container>
 

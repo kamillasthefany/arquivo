@@ -56,6 +56,24 @@ export const CardWrapper = styled.div`
   justify-content: center;
 `;
 
+export const TweetWrapper = styled.div`
+  display: flex;
+  background-color: blue;
+  //height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  background-color: white;
+  width: 100%;
+  //height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 
 export const CardContent = styled.div`

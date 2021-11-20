@@ -18,7 +18,7 @@ export function Menu({ githubUser }) {
             Início
           </Link>
           <Link to='/Teste'>
-            Amigos
+            Trackers
           </Link>
         </nav>
         <nav>

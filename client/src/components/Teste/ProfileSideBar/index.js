@@ -8,12 +8,7 @@ export function ProfileSideBar(props) {
     <Box>
       <img src={userFoto} style={{ borderRadius: '100px' }} />
       <hr />
-      <p>
-        @usuario
-        {/* <a className="boxLink" href={`https://github/${props.githubUser}`} >
-          @{props.githubUser}
-        </a> */}
-      </p>
+      <p>@usuario</p>
       <hr />
       <ProfileSidebarMenu />
     </Box>

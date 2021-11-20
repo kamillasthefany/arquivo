@@ -5,9 +5,9 @@ module.exports = {
     try {
       const { palavraChave } = request.body;
 
-      const result = await twitter.run(palavraChave);
+      //const result = await twitter.run(palavraChave);
       //console.log('resultado service', result);
-      return response.status(200).json(result);
+      return response.status(200).json('sucesso');
     }
     catch (exc) {
       console.log('erro no controler', exc);

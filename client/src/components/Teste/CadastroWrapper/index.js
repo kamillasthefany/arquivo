@@ -21,7 +21,8 @@ export const CadastroWrapper = () => {
 
   return (
     <Container>
-      <h2 className="smallTitle">Novo</h2>
+      <p>Novo </p>
+      <br />
       <textarea
         placeholder="Adicionar comentário"
         value={texto}
