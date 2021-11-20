@@ -33,7 +33,8 @@ export const CardBox = styled.div`
   position: relative;
   //width: 600px;
   width: 100%;
-  height: 200px;
+  //height: 200px;
+  max-height: 250px;
   color: black;
   //background-color: #fff;
   background: rgba(255, 255, 255, 0.05);
@@ -69,26 +70,28 @@ export const Text = styled.div`
 `;
 
 export const CommentWrapper = styled.div`
-    max-height: 50px;
-    display: flex;
-    padding: 0.5rem;
+  max-height: 100px;
+  display: flex;
+  padding: 1rem;
   //width: 100%;
     flex-wrap: wrap;
     align-items: flex-start;
     //color:#404040;
 `;
 
-export const UserInfo = styled.div`
+export const TweetUserInfo = styled.div`
     //max-height: 50px;
     display: flex;
-    justify-content:flex-end;
-  //padding: 0.5rem;
-    width: 100%;
+  justify-content:flex-end;
+  padding: 0.5rem;
+  width: 100%;
   align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     //border: 1px solid #404040;
     margin-right: 10px;
@@ -99,60 +102,6 @@ export const UserInfo = styled.div`
   }
 `;
 
-
-
-// export const Tags = styled.div`
-//   max-height: 50px;
-//   display: flex;
-//   padding: 0.5rem;
-// `;
-
-// export const CardWrapper = styled.div`
-//   display: flex;
-//   background-color: transparent;
-//   height: 100vh;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// export const TweetWrapper = styled.div`
-//   display: flex;
-//   background-color: blue;
-//   //height: 90vh;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// export const ContentWrapper = styled.div`
-//   display: flex;
-//   background-color: white;
-//   width: 100%;
-//   //height: 90vh;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-
-// export const CardContent = styled.div`
-//   position: absolute;
-//   width: 650px;
-//   height: 150px;
-//   background: rgba(255, 255, 255, 0.05);
-//   margin: 10px;
-//   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-//   border-radius: 8px;
-
-//   justify-content: center;
-//   align-items: center;
-//   align-self: center;
-//   backdrop-filter: blur(3px);
-
-//   flex-direction: column;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 10%;
-
-// `;
+export const InfoWrapper = styled.div`
+  flex-direction: column;
+`;

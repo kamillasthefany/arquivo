@@ -33,6 +33,7 @@ const Box = styled.div`
   }
   img {
     max-width: 100%;
+   // width: 70px;
     height: auto;
     display: block;
   }

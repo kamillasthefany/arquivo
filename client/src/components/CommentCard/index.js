@@ -1,6 +1,5 @@
 import React from 'react';
-//import { Container, CardBox, Title, Text, Tags, ContentWrapper, CardContent, TweetWrapper } from './styles';
-import { Container, CardBox, TweetBox, Title, Text, UserInfo, CommentWrapper } from './styles';
+import { Container, CardBox, TweetBox, Title, Text, TweetUserInfo, CommentWrapper, InfoWrapper } from './styles';
 import userFoto from '../../assets/user.png';
 
 export const CommentCard = ({ titulo, texto, hashtags, comentario }) => {
@@ -10,28 +9,18 @@ export const CommentCard = ({ titulo, texto, hashtags, comentario }) => {
         <TweetBox>
           <Text> {comentario} </Text>
           {/* <Title> {titulo}</Title> */}
-          <UserInfo>
-            <p>nome do usuário</p>
+          <TweetUserInfo>
             <img src={userFoto} />
-
-          </UserInfo>
+            <InfoWrapper>
+              <div> <p>nome do usuário </p>  </div>
+              <div><small>20/11/20201 14:51</small> </div>
+            </InfoWrapper>
+          </TweetUserInfo>
         </TweetBox>
         <CommentWrapper>
           <p>{texto}</p>
         </CommentWrapper>
-
       </CardBox>
-      {/* <CardBox id="cardbox">
-        <TweetWrapper>
-          <Title> {titulo}</Title>
-          <Text> {texto} </Text>
-          <Tags> {hashtags}</Tags>
-        </TweetWrapper>
-        <ContentWrapper>
-          <Text> {texto} </Text>
-        </ContentWrapper>
-      </CardBox> */}
     </Container>
-
   );
 };
