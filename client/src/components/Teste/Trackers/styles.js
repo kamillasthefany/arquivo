@@ -4,7 +4,7 @@ export const Container = styled.div`
   background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(5px);
   border-radius: 8px;
-  grid-area: 'profileArea';
+  //grid-area: 'profileArea';
   p{
     margin-bottom: 8px;
     padding: 16px;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   backdrop-filter: blur(5px);
   border-radius: 8px;
   padding: 16px;
-  grid-area: 'profileArea';
+  //grid-area: 'profileArea';
 
   margin-bottom: 10px;
   .boxLink {

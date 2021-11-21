@@ -17,8 +17,14 @@ export function Menu({ githubUser }) {
           <Link to='/home'>
             Início
           </Link>
-          <Link to='/Teste'>
+          <Link to='/Main'>
             Trackers
+          </Link>
+          <Link to='/Home'>
+            Home
+          </Link>
+          <Link to='/Main'>
+            Main
           </Link>
         </nav>
         <nav>

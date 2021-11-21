@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   //background-image:url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-38.jpg);
   background-image:url(https://wallpapersfull.com/wallpapers/2019/piso-preto-wallpaper-11247.jpg);
+
   color:#FFF;
   height: 100vh;
   width:100vw;
@@ -22,5 +23,9 @@ export const ContainerGrid = styled.div`
 
 export const ProfileGrid = styled.div`
  grid-area: 'profileArea';
+ `;
+
+export const WelcomeGrid = styled.div`
+ grid-area: 'welcomeArea';
  `;
 
