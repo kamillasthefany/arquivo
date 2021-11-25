@@ -7,11 +7,11 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+
 `;
 
 export const TweetBox = styled.div`
   position: relative;
-  //width: 600px;
   width: 98%;
   height: 70%;
   color: #a6a6a6;
@@ -31,15 +31,11 @@ export const TweetBox = styled.div`
 
 export const CardBox = styled.div`
   position: relative;
-  //width: 600px;
   width: 100%;
-  //height: 200px;
-  max-height: 250px;
+  max-height: 350px;
   color: black;
-  //background-color: #fff;
   background: rgba(255, 255, 255, 0.05);
   margin: 5px;
- // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   display: flex;
   //justify-content: space-evenly;
@@ -51,54 +47,49 @@ export const CardBox = styled.div`
   &:hover{
     opacity: 1;
       background: rgba(255, 255, 255, 0.09);
-     //transform: translateY(-20px);
   }
+
+  /* @media(max-width: 540px){
+    max-height: 600px;
+  } */
 `;
 
-export const Title = styled.div`
-  display: flex;
-  max-height: 50px;
-  padding: 0.5rem;
-  //color: black;
-`;
 export const Text = styled.div`
-    max-height: 50px;
-    display: flex;
+  max-height: 120px;
+  display: flex;
   padding: 0.5rem;
-  //width: 100%;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  @media(max-width: 540px){
+   max-height: 150px;
+  }
 `;
 
 export const CommentWrapper = styled.div`
   max-height: 100px;
   display: flex;
   padding: 1rem;
-  //width: 100%;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    //color:#404040;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media(max-width: 540px){
+   max-height: 150px;
+  }
 `;
 
 export const TweetUserInfo = styled.div`
-    //max-height: 50px;
-    display: flex;
+  display: flex;
   justify-content:flex-end;
   padding: 0.5rem;
   width: 100%;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 
   img {
     width: 35px;
     height: 35px;
     border-radius: 100px;
-    //border: 1px solid #404040;
     margin-right: 10px;
     margin-left: 10px;
-
-   
-    //margin-right: 5px;
   }
 `;
 

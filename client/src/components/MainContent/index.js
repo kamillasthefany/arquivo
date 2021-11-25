@@ -15,13 +15,13 @@ export const MainContent = () => {
   //const tweets = useListarTweets();
 
   const tweets = [
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo7 },
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo4 },
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo5 },
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo1 },
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo2 },
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo3 },
-    { 'name': 'teste', 'text': paragrafo, 'comentario': paragrafo6 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo7 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo4 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo5 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo1 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo2 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo3 },
+    { 'name': 'teste', 'text': paragrafo5, 'comentario': paragrafo6 },
   ];
 
   return (

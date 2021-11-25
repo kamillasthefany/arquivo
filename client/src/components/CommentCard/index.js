@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, CardBox, TweetBox, Title, Text, TweetUserInfo, CommentWrapper, InfoWrapper } from './styles';
+import { Container, CardBox, TweetBox, Text, TweetUserInfo, CommentWrapper, InfoWrapper } from './styles';
 import userFoto from '../../assets/user.png';
 
 export const CommentCard = ({ titulo, texto, hashtags, comentario }) => {
@@ -8,7 +8,6 @@ export const CommentCard = ({ titulo, texto, hashtags, comentario }) => {
       <CardBox id="cardbox">
         <TweetBox>
           <Text> {comentario} </Text>
-          {/* <Title> {titulo}</Title> */}
           <TweetUserInfo>
             <img src={userFoto} />
             <InfoWrapper>

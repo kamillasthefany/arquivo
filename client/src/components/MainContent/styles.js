@@ -8,6 +8,13 @@ export const Container = styled.div`
   margin-bottom: 10px;
   overflow: auto;
   max-height:85vh;
+  /* justify-content: center;*/
+
+   @media(max-width: 700px){
+    background: transparent;
+    backdrop-filter: none;
+    max-width: 100vh;
+  } 
 
   &::-webkit-scrollbar {
   height: 8px;

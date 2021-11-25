@@ -56,7 +56,7 @@ function ProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
-        <img src={userFoto} style={{ borderRadius: '5px' }} />
+        {/* <img src={userFoto} style={{ borderRadius: '5px' }} /> */}
         {/* <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} /> */}
         <hr />
         <p>

@@ -24,7 +24,7 @@ export const MenuWrapper = styled.header`
     @media(min-width: 860px) {
       display: none;
     }
-    > div {
+    div {
       max-width: 400px;
       margin: auto;
     }
@@ -56,6 +56,7 @@ export const MenuWrapper = styled.header`
     justify-content: space-between;
     position: relative;
     z-index: 101;
+
     @media(min-width: 860px) {
       justify-content: flex-start;
     }
@@ -65,6 +66,7 @@ export const MenuWrapper = styled.header`
       background: transparent;
       align-self: center;
       display: inline-block;
+      
       @media(min-width: 860px) {
         display: none;
       }
