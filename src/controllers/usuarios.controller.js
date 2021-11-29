@@ -2,8 +2,9 @@ const Usuario = require('../models/Usuario');
 const bcrypt = require('bcrypt');
 
 const Usuarios = {
-    all(req, res, next) {
+    all(request, res, next) {
         Usuario.findAll().then((result) => {
+            console.log('userId', request.userId);
             res.json(result);
         })
             .catch(next);

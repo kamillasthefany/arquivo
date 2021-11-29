@@ -3,7 +3,7 @@ const Arquivo = require('../models/Arquivo');
 const Arquivos = {
   index(request, response, next) {
     Arquivo.findAll().then((result) => {
-      res.json(result);
+      response.json(result);
     })
       .catch(next);
   },

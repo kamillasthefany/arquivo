@@ -6,7 +6,7 @@ module.exports = {
       const { palavraChave } = request.body;
 
       //const result = await twitter.run(palavraChave);
-      //console.log('resultado service', result);
+      // console.log('resultado service', result);
       return response.status(200).json('sucesso');
     }
     catch (exc) {

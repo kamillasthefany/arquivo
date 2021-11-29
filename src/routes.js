@@ -24,9 +24,9 @@ const authMiddleware = require('./middlewares/auth');
 
 
 //USUÁRIOS
-routes.get('/usuarios', Usuario.all);
+//routes.get('/usuarios', Usuario.all);
 routes.post('/usuarios', Usuario.create);
-
+routes.get('/usuarios', authMiddleware, Usuario.all);
 
 //Scrapper
 routes.post('/scrapper', WebScrapper.index);

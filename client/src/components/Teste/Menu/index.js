@@ -26,6 +26,9 @@ export function Menu({ githubUser }) {
           <Link to='/Main'>
             Main
           </Link>
+          <Link to='/Teste'>
+            Teste
+          </Link>
         </nav>
         <nav>
           <a href={`/logout`}>

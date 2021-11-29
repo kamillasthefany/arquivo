@@ -12,7 +12,7 @@ module.exports = (request, response, next) => {
     if (error)
       return response.status(401).send({ error: "Token inválido" });
 
-    //request.userId = decoded.id;
+    request.userId = decoded.id;
     return next();
   });
 }
