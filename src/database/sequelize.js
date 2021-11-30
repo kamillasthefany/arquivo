@@ -1,8 +1,8 @@
 const { Sequelize } = require("sequelize");
 
-const Usuario = require('../models/Usuario');
-const Arquivo = require('../models/Arquivo');
-const Comentario = require('../models/Comentario');
+const Usuario = require('../app/models/Usuario');
+const Arquivo = require('../app/models/Arquivo');
+const Comentario = require('../app/models/Comentario');
 
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
   define: {

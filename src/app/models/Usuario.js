@@ -6,6 +6,8 @@ class Usuario extends Model {
       nome: DataTypes.STRING,
       email: DataTypes.STRING,
       senha: DataTypes.STRING,
+      reset_token: DataTypes.STRING,
+      reset_expires: DataTypes.DATE,
     },
       {
         sequelize: connection,

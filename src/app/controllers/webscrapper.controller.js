@@ -1,4 +1,4 @@
-const scrapper = require('../services/webscrapper');
+const scrapper = require('../../services/webscrapper');
 
 module.exports = {
   async index(request, response) {

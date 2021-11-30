@@ -1,4 +1,4 @@
-const twitter = require('../services/twitter');
+const twitter = require('../../services/twitter');
 
 module.exports = {
   async index(request, response) {

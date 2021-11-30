@@ -1,16 +1,15 @@
 const express = require('express');
-//const app = require('expre')
-
 const routes = express.Router();
 
-const Usuario = require('./controllers/usuarios.controller');
-const Autenticacao = require('./controllers/autenticacao.controller');
-const Arquivo = require('./controllers/arquivos.controller');
-const Comentario = require('./controllers/comentarios.controller');
-const WebScrapper = require('./controllers/webscrapper.controller');
-const Tweet = require('./controllers/tweet.controller');
 
-const authMiddleware = require('./middlewares/auth');
+const Usuario = require('./app/controllers/usuarios.controller');
+const Autenticacao = require('./app/controllers/autenticacao.controller');
+const Arquivo = require('./app/controllers/arquivos.controller');
+const Comentario = require('./app/controllers/comentarios.controller');
+const WebScrapper = require('./app/controllers/webscrapper.controller');
+const Tweet = require('./app/controllers/tweet.controller');
+
+const authMiddleware = require('./app/middlewares/auth');
 
 
 // express.group("/api/", (router) => {
@@ -24,15 +23,17 @@ const authMiddleware = require('./middlewares/auth');
 
 
 //USUÁRIOS
-//routes.get('/usuarios', Usuario.all);
+routes.get('/usuarios', Usuario.all);
 routes.post('/usuarios', Usuario.create);
-routes.get('/usuarios', authMiddleware, Usuario.all);
+//routes.get('/usuarios', authMiddleware, Usuario.all);
 
 //Scrapper
 routes.post('/scrapper', WebScrapper.index);
 
 //AUTENTICACAO
 routes.post('/autenticacao', Autenticacao.index);
+routes.post('/esqueci_senha', Autenticacao.esqueciSenha);
+routes.post('/reset_senha', Autenticacao.resetarSenha);
 
 //ARQUIVOS
 routes.get('/arquivos', authMiddleware, Arquivo.index);
